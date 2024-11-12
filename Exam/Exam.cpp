@@ -5,6 +5,7 @@
 int main()
 {
     int month = 1;
+    std::string result = "";
 
     std::cout << "請輸入月份(1~12月) : ";
     std::cin >> month;
@@ -12,18 +13,26 @@ int main()
         std::cout << "請輸入正確的月份" << std::endl;
     }
     else {
-        if (month >= 3 && month <= 5) {
-            std::cout << "春季" << std::endl;
+        switch (month) {
+        case 3:
+        case 4:
+        case 5:
+            result = "春季";
+            break;
+        case 6:
+        case 7:
+        case 8:
+            result = "夏季";
+            break;
+        case 9:
+        case 10:
+        case 11:
+            result = "秋季";
+            break;
+        default:
+            result = "冬季";
         }
-        else if (month >= 6 && month <= 8) {
-            std::cout << "夏季" << std::endl;
-        }
-        else if (month >= 9 && month <= 11) {
-            std::cout << "秋季" << std::endl;
-        }
-        else {
-            std::cout << "冬季" << std::endl;
-        }
+        std::cout << result;
     }
 
     return 0;
