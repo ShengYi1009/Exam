@@ -20,11 +20,11 @@ int main()
     for (int i = 1; i <= num; i++) {
         result *= i;
     }
-    std::cout << num << "! = " << result << std::endl;
+    std::cout << "非遞迴版本" << num << "! = " << result << std::endl;
 
     //遞迴計算
     result = factorial(num);
-    std::cout << num << "! = " << result << std::endl;
+    std::cout << "遞迴版本" << num << "! = " << result << std::endl;
 
     return 0;
 }
