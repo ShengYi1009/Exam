@@ -14,16 +14,16 @@ int main()
     }
     else {
         if (month >= 3 && month <= 5) {
-            std::cout << "春季" << std::endl;
+            std::cout <<month << "月是春季" << std::endl;
         }
         else if (month >= 6 && month <= 8) {
-            std::cout << "夏季" << std::endl;
+            std::cout << month << "月是夏季" << std::endl;
         }
         else if (month >= 9 && month <= 11) {
-            std::cout << "秋季" << std::endl;
+            std::cout << month << "月是秋季" << std::endl;
         }
         else {
-            std::cout << "冬季" << std::endl;
+            std::cout << month << "月是冬季" << std::endl;
         }
     }
 
