@@ -1,5 +1,5 @@
 ﻿//4B3G0132 徐勝益 程式作業
-
+//利用 For loop、While loop、Do-While loop 計算小於等於n的所有偶數的和
 #include <iostream>
 
 int main()
