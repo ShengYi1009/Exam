@@ -2,9 +2,29 @@
 
 #include <iostream>
 
+int factorial(int k) {
+    if (k == 0)return 1;
+    else return k * factorial(k - 1);
+}
+
+
 int main()
 {
-    std::cout << "Hello World!\n";
+    int num;
+
+    std::cout << "輸入一個正整數: ";
+    std::cin >> num;
+
+    //非遞迴計算n!
+    int result = 1;
+    for (int i = 1; i <= num; i++) {
+        result *= i;
+    }
+    std::cout << num << "! = " << result << std::endl;
+
+    //遞迴計算
+    result = factorial(num);
+    std::cout << num << "! = " << result << std::endl;
 
     return 0;
 }
