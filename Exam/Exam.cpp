@@ -1,4 +1,5 @@
 ﻿//4B3G0132 徐勝益 程式作業
+//判斷月份
 
 #include <iostream>
 
