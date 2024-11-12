@@ -32,7 +32,7 @@ int main()
         default:
             result = "冬季";
         }
-        std::cout << result;
+        std::cout << month << "月是" << result;
     }
 
     return 0;
