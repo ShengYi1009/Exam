@@ -1,4 +1,5 @@
 ﻿//4B3G0132 徐勝益 程式作業
+//switch版本的判斷月份
 
 #include <iostream>
 
