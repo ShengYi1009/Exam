@@ -10,8 +10,6 @@ int main()
     std::cin >> month;
     if (month > 12 || month < 1) {
         std::cout << "請輸入正確的月份" << std::endl;
-        std::cout << "請輸入月份(1~12月) : ";
-        std::cin >> month;
     }
     else {
         if (month >= 3 && month <= 5) {
